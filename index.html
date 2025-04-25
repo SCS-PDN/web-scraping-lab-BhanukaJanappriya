@@ -1,4 +1,21 @@
-<form action="scrape" method="GET">
-  <input type="url" name="url" placeholder="Enter URL">
-  <button type="submit">Scrape</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>News Scraper</title>
+  </head>
+  <body>
+    <h1>News Scraper</h1>
+    <form method="post" action="scrape">
+      <label>Enter URL to scrape:</label>
+      <input
+        type="text"
+        name="url"
+        value="https://www.bbc.com/news"
+        size="50"
+      />
+      <br /><br />
+      <button type="submit">Scrape News</button>
+    </form>
+  </body>
+</html>
